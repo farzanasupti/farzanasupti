@@ -7,7 +7,7 @@ I care about evaluation that holds up: patient-level splits, leakage checks, and
 - 🔬 Research Collaborator, **Big-Matrix R&D Lab, North South University** (2026–present)
 - 💼 Software Engineer, **Ternary Solutions Inc.** (2025–present)
 - 🎓 Former Research Intern, **Kamaleswaran Lab, Duke University** (2025)
-- 📫 farzanasupti@gmail.com
+- 📫 farzanasupti@gmail.com · [LinkedIn](https://www.linkedin.com/in/farzana-rahman-supti/) · [ResearchGate](https://www.researchgate.net/profile/Farzana-Supti)
 
 ### Research interests
 AI agents · Trustworthy AI & evaluation · LLMs & RAG · Multimodal / vision–language models ·
