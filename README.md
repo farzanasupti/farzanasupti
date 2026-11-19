@@ -1,36 +1,21 @@
-## Hi, I'm Farzana 👋
+I'm Farzana. I work on medical image analysis, and most of my research comes back to one question: do the numbers we report actually hold up? I'm a research collaborator at the Big-Matrix R&D Lab at North South University, and I work as a software engineer at Ternary Solutions, where I build LLM systems that a person reviews before anything goes out. Before that I was a remote research intern at the Kamaleswaran Lab at Duke.
 
-Researcher in **machine learning, computer vision and applied AI**, and software engineer at Ternary Solutions.
-My work spans **medical image analysis**, **LLM-powered applications**, and building and evaluating **reliable AI systems**.
-I care about evaluation that holds up: patient-level splits, leakage checks, and controlled comparisons.
+More about me and my research: [farzanasupti.github.io](https://farzanasupti.github.io). I'm on [LinkedIn](https://www.linkedin.com/in/farzana-rahman-supti/) and [ResearchGate](https://www.researchgate.net/profile/Farzana-Supti), or email me at farzanasupti@gmail.com.
 
-- 🔬 Research Collaborator, **Big-Matrix R&D Lab, North South University** (2026–present)
-- 💼 Software Engineer, **Ternary Solutions Inc.** (2025–present)
-- 🎓 Former Research Intern, **Kamaleswaran Lab, Duke University** (2025)
-- 🌐 [farzanasupti.github.io](https://farzanasupti.github.io)
-- 📫 farzanasupti@gmail.com · [LinkedIn](https://www.linkedin.com/in/farzana-rahman-supti/) · [ResearchGate](https://www.researchgate.net/profile/Farzana-Supti)
+### What I'm working on
 
-### Research interests
-AI agents · Trustworthy AI & evaluation · LLMs & RAG · Multimodal / vision–language models ·
-Medical imaging · AI in education & human-centred AI · Geospatial ML
+[Brain-Tumor-Segmentation](https://github.com/farzanasupti/Brain-Tumor-Segmentation) is a pre-registered study of whether telling a U-Net the tumour type helps it segment brain MRI. So far it doesn't, even when the model is given the true type. Along the way I measured how much splitting by slice instead of by patient inflates the scores, and I found a shortcut that our own augmentation was creating. I'm doing this with MD Mahi Sarkar and Farhana Rahman Elma, and the paper is in preparation.
 
-### Current & recent research
-| Project | What | Status |
-|---|---|---|
-| [**Tumour-type-conditioned brain tumour segmentation**](https://github.com/farzanasupti/Brain-Tumor-Segmentation) | U-Net segmentation on T1-CE MRI whose decoder is steered by a predicted tumour-type posterior (FiLM), evaluated patient-disjoint with cross-validation; includes an analysis of how slice-level leakage inflates reported scores | Ongoing, with MD Mahi Sarkar and Farhana Rahman Elma |
-| **Ensemble deep learning for skin disease classification** | A custom CNN and seven ImageNet-pretrained models compared on five-class skin-condition classification, with image-level and patient-level evaluation | First author, under review at *Scientific Reports* |
-| [**Counting photographs, not images: duplicate-aware skin disease classification**](https://github.com/farzanasupti/skin-disease-classification) | Eight models on the public Mendeley skin dataset, which turned out to be 341 original photos with 27 augmented copies each; grouped cross-validation, scoring on original photos only, and MC-Dropout for referring low-confidence cases | Manuscript in preparation, with MD Mahi Sarkar and Farhana Rahman Elma |
-| **PP-SAM replication** (CVPRW 2024) | Few-shot SAM adaptation with perturbed box prompts on Kvasir-SEG, adapted for limited GPU memory | Completed |
-| **U-Mamba for brain tumour segmentation** | U-Net with a custom VisionMamba block for 2D BraTS slices | Ongoing |
-| **River erosion analysis**, NSU Civil & Environmental Eng. | CNN / transfer learning on satellite imagery | 2024–2025 |
+[skin-disease-classification](https://github.com/farzanasupti/skin-disease-classification) started as a benchmark of eight models on a public skin-condition dataset. Then I found that its 9,548 images come from only 341 photographs, each saved with 27 augmented copies. The project now groups each photograph with its copies, scores only on the originals, and shows how much an ordinary image-level split overstates accuracy. This one is also with Mahi and Elma, and also in preparation.
 
-### Tech
-**ML / CV:** PyTorch · TensorFlow / Keras · MONAI · scikit-learn · OpenCV · U-Net · UNETR · Swin-UNETR · SAM · ViT · Mamba
-**Software:** Python · TypeScript · Java · SQL · FastAPI · React / Next.js · React Native / Expo
-**Infra:** PostgreSQL · Redis · Docker · AWS · Terraform · GitHub Actions · pytest
+I'm also starting a bilingual (English and Bangla) brain-MRI question-answering benchmark whose answers come straight from expert masks, so every answer can be checked.
 
-### Other repos here
-- [Virtual-TryOn](https://github.com/farzanasupti/Virtual-TryOn): apparel try-on pipeline (U-Net human parsing + CAGAN)
-- [BashaBari](https://github.com/farzanasupti/BashaBari): house-rental web app (PHP / MySQL)
+### Earlier work
 
-<sub>Much of my industry work lives in private repositories.</sub>
+- A first-author paper comparing a small custom CNN with seven pretrained models for skin disease classification, under review at *Scientific Reports*.
+- A replication of PP-SAM (CVPR Workshops 2024), few-shot SAM adaptation on Kvasir-SEG, squeezed onto a small GPU.
+- A U-Net with Mamba blocks for 2D BraTS slices.
+- River erosion classification from satellite images with the Civil & Environmental Engineering department at NSU.
+- [Virtual-TryOn](https://github.com/farzanasupti/Virtual-TryOn) and [BashaBari](https://github.com/farzanasupti/BashaBari), from my undergrad.
+
+Day to day I write Python and PyTorch for research, and TypeScript, FastAPI and React at work. Most of my industry code is in private repositories.
