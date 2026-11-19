@@ -17,7 +17,7 @@ Medical imaging · AI in education & human-centred AI · Geospatial ML
 | Project | What | Status |
 |---|---|---|
 | [**Tumour-type-conditioned brain tumour segmentation**](https://github.com/farzanasupti/Brain-Tumor-Segmentation) | U-Net segmentation on T1-CE MRI whose decoder is steered by a predicted tumour-type posterior (FiLM), evaluated patient-disjoint with cross-validation; includes an analysis of how slice-level leakage inflates reported scores | Ongoing |
-| **Ensemble deep learning for skin disease classification** | Eight-architecture ensemble with MC-Dropout uncertainty and patient-level validation; 89.47% holdout accuracy, MCC 0.84 | First author, under review at *Scientific Reports* |
+| [**Ensemble deep learning for skin disease classification**](https://github.com/farzanasupti/skin-disease-ensemble-2026) | Eight-architecture ensemble with MC-Dropout uncertainty and patient-level validation; 89.47% holdout accuracy, MCC 0.84 | First author, under review at *Scientific Reports* |
 | **PP-SAM replication** (CVPRW 2024) | Few-shot SAM adaptation with perturbed box prompts on Kvasir-SEG, adapted for limited GPU memory | Completed |
 | **U-Mamba for brain tumour segmentation** | U-Net with a custom VisionMamba block for 2D BraTS slices | Ongoing |
 | **River erosion analysis**, NSU Civil & Environmental Eng. | CNN / transfer learning on satellite imagery | 2024–2025 |
